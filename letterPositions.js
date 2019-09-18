@@ -26,18 +26,18 @@ const letterPositions = function(string) {
 
   for (let i = 0; i < string.length; i++) {
     if (string[i] !== ' ') {
-        if (!results[string[i]]) {
-      results[string[i]] = [i];
-    }   else {
-      results[string[i]].push(i);
+      if (!results[string[i]]) {
+        results[string[i]] = [i];
+      } else {
+        results[string[i]].push(i);
+      }
     }
   }
-}
 
-console.log(results);
-return results;
+  console.log(results);
+  return results;
 
-}
+};
 
 let greeting = "hello";
 letterPositions(greeting);
